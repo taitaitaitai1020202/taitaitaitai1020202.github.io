@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>§チーム 公式ホームページ</title>
+    <style>
+      /* スムーズスクロールを有効にする設定 */
+      html {
+          scroll-behavior: smooth;
+          scroll-padding-top: 90px; /* スクロールしたときにヘッダーと被らないための余白 */
+      }
+
+      /* 全体のデザイン（スプラトゥーンをイメージした黒ベース） */
+      body {
+          font-family: 'Helvetica Neue', Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #1a1a1a;
+          color: #ffffff;
+      }
+
+      /* ヘッダー（画面の上のバー） */
+      header {
+          background-color: #222;
+          padding: 10px 30px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 4px solid #ccff00; /* ネオンイエローの線 */
+          position: sticky; /* 画面の上に固定する設定 */
+          top: 0;
+          z-index: 100;
+      }
+
+      /* 左上のロゴ画像エリア */
+      .logo-container {
+          display: flex;
+          align-items: center;
+      }
+      .logo-container a {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+      }
+      .logo-image {
+          height: 50px; /* ロゴ画像の高さ（自由に変更してください） */
+          width: auto;
+          object-fit: contain;
+      }
+
+      /* 右上の簡易メニュー */
+      nav ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          gap: 20px;
+      }
+      nav a {
+          color: #fff;
+          text-decoration: none;
+          font-weight: bold;
+      }
+      nav a:hover {
+          color: #ccff00;
+      }
+
+      /* メインの書き込みエリア */
+      main {
+          max-width: 800px;
+          margin: 40px auto;
+          padding: 0 20px;
+      }
+
+      h1, h2 {
+          color: #ff00ff; /* ネオンピンク */
+          border-left: 5px solid #ccff00;
+          padding-left: 10px;
+      }
+
+      .section {
+          background-color: #2b2b2b;
+          padding: 20px;
+          margin-bottom: 30px;
+          border-radius: 8px;
+      }
+
+      /* よくある質問（FAQ）の見た目 */
+      .faq-item {
+          margin-bottom: 20px;
+          border-bottom: 1px solid #444;
+          padding-bottom: 15px;
+      }
+      .faq-question {
+          font-weight: bold;
+          color: #ccff00;
+          margin-bottom: 5px;
+      }
+      .faq-answer {
+          color: #ddd;
+          padding-left: 15px;
+      }
+
+      /* フッター（一番下） */
+      footer {
+          text-align: center;
+          padding: 20px;
+          background-color: #111;
+          font-size: 14px;
+          color: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ヘッダーエリア -->
+    <header>
+      <!-- 左上のロゴ画像（srcの中にあとでロゴの画像リンクをいれてください） -->
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="https://cdn.imagetourls.com/uploads/tyImg/8UF2PxZE.png" alt="§チーム ロゴ" class="logo-image" />
+        </a>
+      </div>
+
+      <!-- 右側のメニュー -->
+      <nav>
+        <ul>
+          <li><a href="#about">チーム紹介</a></li>
+          <li><a href="#faq">よくある質問</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+      <!-- チーム紹介セクション -->
+      <!-- チーム紹介セクション -->
+      <section id="about" class="section">
+        <h1>§チーム について</h1>
+        <p>スプラトゥーンで活動しているチーム「§チーム」の公式ホームページです！</p>
+
+        <!-- 文章の中にリンクを混ぜる例 -->
+        <p>
+          §は、YouTuber「ハムすりー【Hamusuri】」が制作した、スプラトゥーンチームです。 主に動画の撮影をします。
+          私たちのチームは、主に不定期で活動しています。 最新動画などは
+          <a href="https://youtube.com/@Hamusuri-YT" target="_blank" class="text-link">ハムすりー【Hamsuri】</a>
+          をぜひチェックしてみてください！
+        </p>
+
+        <p>
+          現在、一緒にナワバリバトルやバンカラマッチを楽しめるメンバーを大募集中です。
+          加入を希望される方や、質問がある方は、気軽に入部申請を送ってみてください！
+        </p>
+      </section>
+
+      <!-- よくある質問セクション -->
+      <section id="faq" class="section">
+        <h2>よくある質問 (FAQ)</h2>
+
+        <!-- 質問1 -->
+        <div class="faq-item">
+          <div class="faq-question">Q. Discordに入れなくてもチームに参加できますか？</div>
+          <div class="faq-answer">A. はい！入れます！できれば入ってほしいです？</div>
+        </div>
+
+        <!-- 質問2 -->
+        <div class="faq-item">
+          <div class="faq-question">Q. フレンドなれますか？</div>
+          <div class="faq-answer">
+            A. 横動画を見てください！見たら動画のコメント欄にフレンドコードを書いてください！
+          </div>
+        </div>
+
+        <!-- 質問3 -->
+        <div class="faq-item">
+          <div class="faq-question">Q. コントローラー何使ってますか？</div>
+          <div class="faq-answer">A. Nindendo純正コントローラー</div>
+        </div>
+
+        <!-- 質問3 -->
+        <div class="faq-item">
+          <div class="faq-question">Q. 加入条件は何ですか？</div>
+          <div class="faq-answer">A. 「プレイ時間が200時間を超えていること」「§を名前に必ずつける」</div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 画面の一番下 -->
+    <footer>
+      <p>© 2026 §チーム All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
